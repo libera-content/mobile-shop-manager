@@ -1,0 +1,5 @@
+{
+  "arrivals":{"dailyWalkIns":45},
+  "purposeRatios":{"upgrade":0.3,"newContract":0.1,"procedure":0.3,"repair":0.2,"browse":0.1},
+  "waitToleranceMinutes":{"min":20,"max":60}
+}
