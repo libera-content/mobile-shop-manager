@@ -1,0 +1,12 @@
+declare const brand: unique symbol;
+type Brand<T,B extends string> = T & { readonly [brand]: B };
+export type StaffId = Brand<string,'StaffId'>;
+export type CustomerId = Brand<string,'CustomerId'>;
+export type ManagerId = Brand<string,'ManagerId'>;
+export type ContractTypeId = Brand<string,'ContractTypeId'>;
+export type FacilityId = Brand<string,'FacilityId'>;
+export const asStaffId=(v:string):StaffId=>v as StaffId;
+export const asCustomerId=(v:string):CustomerId=>v as CustomerId;
+export const asManagerId=(v:string):ManagerId=>v as ManagerId;
+export const asContractTypeId=(v:string):ContractTypeId=>v as ContractTypeId;
+export const asFacilityId=(v:string):FacilityId=>v as FacilityId;
