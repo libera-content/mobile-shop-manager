@@ -1,0 +1,4 @@
+{
+  "target":{"contractTypeId":"upgrade","min":1,"max":20,"default":10},
+  "checkpoints":["13:00","15:00","17:00"]
+}
