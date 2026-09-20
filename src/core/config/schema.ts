@@ -53,3 +53,15 @@ export type CustomersConfig=z.infer<typeof customersSchema>;
 export type ProductsConfig=z.infer<typeof productsSchema>;
 export type InstructionOptionsConfig=z.infer<typeof instructionOptionsSchema>;
 export type StoreLayoutConfig=z.infer<typeof storeLayoutSchema>;
+
+export const instructionInputSchema=z.object({
+  target:z.number().int().nullable(),
+  scope:z.enum(['unspecified','upgradePurpose','eligible','all']),
+  actions:z.array(z.enum(['propose','call','receptionPriority'])),
+  callCount:z.number().int().nullable(),
+  assignees:z.array(z.string()),
+  checkpoint:z.string().nullable(),
+  tone:z.enum(['supportive','neutral','firm','emotional']),
+  comprehensionCheck:z.enum(['none','askQuestions','restate'])
+});
+export type InstructionInput=z.infer<typeof instructionInputSchema>;
