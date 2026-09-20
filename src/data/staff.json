@@ -1,0 +1,8 @@
+{
+  "staff":[
+    {"id":"A","name":"相沢","trait":"proactive","abilities":{"sales":70,"proposal":65,"processingSpeed":60,"communication":65},"condition":{"motivation":70,"fatigue":20,"trustInManager":60},"homeZone":"counter"},
+    {"id":"B","name":"馬場","trait":"waitsForInstruction","abilities":{"sales":55,"proposal":50,"processingSpeed":70,"communication":55},"condition":{"motivation":60,"fatigue":20,"trustInManager":60},"homeZone":"reception"},
+    {"id":"C","name":"千葉","trait":"logical","abilities":{"sales":65,"proposal":70,"processingSpeed":55,"communication":50},"condition":{"motivation":60,"fatigue":20,"trustInManager":55},"homeZone":"counter"},
+    {"id":"D","name":"土屋","trait":"emotional","abilities":{"sales":60,"proposal":55,"processingSpeed":50,"communication":75},"condition":{"motivation":65,"fatigue":20,"trustInManager":65},"homeZone":"counter"}
+  ]
+}
