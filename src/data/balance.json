@@ -1,0 +1,6 @@
+{
+  "version":1,
+  "time":{"secondsPerTick":2,"preOpenTime":"09:30","morningMeetingTime":"09:45","openTime":"10:00","closeTime":"19:00","gameSecondsPerRealSecondAt1x":54,"maxTicksPerFrame":8},
+  "movement":{"walkCellsPerGameSecond":0.15},
+  "communication":{"baseTransmission":0.75}
+}
