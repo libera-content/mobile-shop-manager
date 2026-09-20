@@ -1,0 +1,28 @@
+/** ドメインの列挙型。 */
+export const ZONE_IDS = ['outside','entrance','reception','waiting','counter','display','office'] as const;
+export type ZoneId = (typeof ZONE_IDS)[number];
+export const VISIT_PURPOSES = ['upgrade','newContract','procedure','repair','browse'] as const;
+export type VisitPurpose = (typeof VISIT_PURPOSES)[number];
+export const TRAITS = ['proactive','waitsForInstruction','logical','emotional'] as const;
+export type Trait = (typeof TRAITS)[number];
+export const STAFF_ROLES = ['reception','counter','calling','floor'] as const;
+export type StaffRole = (typeof STAFF_ROLES)[number];
+export const STAFF_STATES = ['idle','moving','reception','serving','calling','meeting','break'] as const;
+export type StaffState = (typeof STAFF_STATES)[number];
+export const CUSTOMER_STATES = ['outside','entering','queueing','atReception','waiting','movingToCounter','inService','leaving','leavingAngry','exited'] as const;
+export type CustomerState = (typeof CUSTOMER_STATES)[number];
+export const GAME_PHASES = ['preOpen','open','closed'] as const;
+export type GamePhase = (typeof GAME_PHASES)[number];
+export const MANAGER_ACTIONS = ['idle','moving','talking','receptionHelp','progressCheck'] as const;
+export type ManagerAction = (typeof MANAGER_ACTIONS)[number];
+export const TONES = ['supportive','neutral','firm','emotional'] as const;
+export type Tone = (typeof TONES)[number];
+export const COMPREHENSION_CHECKS = ['none','askQuestions','restate'] as const;
+export type ComprehensionCheck = (typeof COMPREHENSION_CHECKS)[number];
+export const INSTRUCTION_SCOPES = ['unspecified','upgradePurpose','eligible','all'] as const;
+export type InstructionScope = (typeof INSTRUCTION_SCOPES)[number];
+export const INSTRUCTION_ACTIONS = ['propose','call','receptionPriority'] as const;
+export type InstructionAction = (typeof INSTRUCTION_ACTIONS)[number];
+export const RNG_STREAMS = ['spawn','decision','sales','communication'] as const;
+export type RngStreamName = (typeof RNG_STREAMS)[number];
+export const isOneOf = <T extends string>(list: readonly T[], v: string): v is T => (list as readonly string[]).includes(v);
