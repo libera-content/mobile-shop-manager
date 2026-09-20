@@ -1,0 +1,12 @@
+{
+  "company":"ミライモバイル",
+  "contractTypes":[
+    {"id":"upgrade","label":"機種変更","category":"mobile","countsAsContract":true,"enabled":true},
+    {"id":"newContract","label":"新規契約","category":"mobile","countsAsContract":true,"enabled":true},
+    {"id":"mnp","label":"MNP","category":"mobile","countsAsContract":true,"enabled":false},
+    {"id":"subBrand","label":"サブブランド","category":"mobile","countsAsContract":true,"enabled":false},
+    {"id":"fixedLine","label":"固定回線","category":"fixed","countsAsContract":true,"enabled":false}
+  ],
+  "salesOpportunityPurposes":["upgrade","newContract"],
+  "hqTargets":[{"contractTypeId":"upgrade","count":10,"period":"day"}]
+}
